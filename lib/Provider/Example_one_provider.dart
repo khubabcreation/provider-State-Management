@@ -1,0 +1,16 @@
+import 'package:flutter/cupertino.dart';
+
+class exampleOneProvider with ChangeNotifier{
+  double _value = 1.0;
+  double get value => _value;
+
+
+  void incrementExampleProvider(double val){
+    _value = val;
+    notifyListeners();
+
+  }
+
+
+
+}
